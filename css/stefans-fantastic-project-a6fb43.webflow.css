@@ -661,12 +661,12 @@
 
 .highlight {
   position: absolute;
-  left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
+  left: 0%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
   width: 300px;
-  height: 300px;
+  height: 250px;
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
