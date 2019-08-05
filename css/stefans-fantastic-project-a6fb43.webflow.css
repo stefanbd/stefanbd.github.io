@@ -31,7 +31,7 @@
 }
 
 .div-block-2 {
-  position: relative;
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -512,7 +512,7 @@
 }
 
 .div-block-3 {
-  position: relative;
+  position: static;
   left: auto;
   top: 0%;
   right: 0%;
@@ -574,7 +574,7 @@
 }
 
 .div-block-4 {
-  position: relative;
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -609,7 +609,7 @@
 }
 
 .columns-2 {
-  position: relative;
+  position: static;
   left: 0%;
   right: 0%;
   bottom: auto;
@@ -688,6 +688,9 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
@@ -696,17 +699,17 @@
 }
 
 .highlight {
-  position: absolute;
+  position: static;
   left: 0%;
   top: auto;
   right: auto;
   bottom: 0%;
   width: 300px;
   height: 250px;
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.22;
@@ -980,6 +983,7 @@
 @media (max-width: 479px) {
   .div-block-2 {
     position: static;
+    display: block;
     margin-bottom: 250px;
     margin-left: 0px;
     -webkit-box-pack: start;
@@ -1004,16 +1008,25 @@
     flex: 0 auto;
   }
   .section-2 {
+    position: static;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    text-transform: none;
+  }
+  .div-block-3 {
+    position: static;
   }
   .div-block-4 {
+    position: static;
     display: block;
     margin-right: 0px;
     margin-left: 0px;
