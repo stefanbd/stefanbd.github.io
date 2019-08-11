@@ -915,18 +915,25 @@
   width: 80px;
   height: 80px;
   border-radius: 9px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 97.3%, 0.09)), to(hsla(0, 0%, 97.3%, 0.09))), url('../images/linkedin-logo-vector-free-download-linkedin-logo-icons-free-download-custom-logo-maker.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 97.3%, 0.09), hsla(0, 0%, 97.3%, 0.09)), url('../images/linkedin-logo-vector-free-download-linkedin-logo-icons-free-download-custom-logo-maker.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url('../images/linkedin-logo-vector-free-download-linkedin-logo-icons-free-download-custom-logo-maker.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/linkedin-logo-vector-free-download-linkedin-logo-icons-free-download-custom-logo-maker.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
-  box-shadow: inset 0 -20px 20px 0 #000;
-  -webkit-transition: box-shadow 300ms ease-in;
-  transition: box-shadow 300ms ease-in;
 }
 
 .link-block:hover {
-  box-shadow: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url('../images/linkedin-logo-vector-free-download-linkedin-logo-icons-free-download-custom-logo-maker.jpg');
+  background-image: linear-gradient(180deg, transparent, transparent), url('../images/linkedin-logo-vector-free-download-linkedin-logo-icons-free-download-custom-logo-maker.jpg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  opacity: 1;
+}
+
+.html-embed {
+  margin-left: 150px;
+  padding-left: 0px;
 }
 
 @media (max-width: 991px) {
